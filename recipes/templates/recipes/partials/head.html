@@ -93,7 +93,7 @@
         }
 
         .container {
-            max-width: 144rem;
+            max-width: 120rem;
             margin: 0 auto;
             padding: var(--spacing-gutter-medium);
         }
@@ -120,7 +120,7 @@
 
         .search-form {
             border: .2rem solid var(--color-primary-dark);
-            max-width: 64;
+            max-width: 64rem;
             margin: 0 auto;
             border-radius: .4rem;
             position: relative;
@@ -160,6 +160,16 @@
 
         .search-form:focus-within .search-button {
             color: var(--color-primary);
+        }
+
+        .main-content {
+            padding-top: 0;
+        }
+
+        .main-content-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: var(--spacing-gutter-large);
         }
     </style>
 </head>
