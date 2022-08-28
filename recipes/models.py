@@ -1,9 +1,12 @@
-from turtle import title
-
+from django.contrib.auth.models import User
 from django.db import models
 
 
 # Create your models here.
+class Category (models.Model):
+    name = models.CharField(max_length=65)
+
+
 class Recipe(models.Model):
     title = models.CharField(max_length=65)
     description = models.CharField(max_length=165)
@@ -18,16 +21,9 @@ class Recipe(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=False)
     cover = models.ImageField(upload_to='recipes/covers/%Y/%m/%d/')
-
-
-# EDITED
-# title description slug
-# preparation_time preparation_time_unit
-# serving serving_unit
-# preparation_step
-# preparation_step_is_html
-# created_at updated_at
-# is_published
-# cover
-# category (relação)
-# Author (relação)
+    category = models.ForeignKey(
+        Category, on_delete=models.SET_NULL, null=True
+    )
+    category = models.ForeignKey(
+        User, on_delete=models.SET_NULL, null=True
+    )
