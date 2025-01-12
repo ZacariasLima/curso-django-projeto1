@@ -5,10 +5,12 @@ from django.http import HttpResponse
 
 #Functions temp de HTML
 def home (request):
-    return render (request, 'recipes/home.html')
+    return render (request, 'recipes/home.html', context= {
+        'name': 'Zacarias Figueiredo Lima'
+    })
 
 def contact (request):
-    return HttpResponse ('Contato')
+    return render (request, 'recipes/contato.html')
 
 def about (request):
     return HttpResponse ('Sobre')
