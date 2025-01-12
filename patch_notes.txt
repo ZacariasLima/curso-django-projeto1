@@ -1,0 +1,7 @@
+Tranking do Commit:
+Commit: Classe 23
+  1.1 -> Foi criada a pasta base_templates que será o repositório para templates globais;
+  1.2 -> No app recipes, também foi criada a pasta de templates das recipes
+  1.3 -> Existem as subpastas global e recipes pra evitar nomes em duplicidades.
+  1.4 -> Arquivo settings alterado para adicionar o "BASE_DIR / base_templates" nos diretorios de template
+  1.5 -> Arquivo settings alterado para adicionar o app recipes na lista de applications 
