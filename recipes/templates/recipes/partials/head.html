@@ -1,3 +1,5 @@
+<!-- Arquivo do HEAD do html -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -6,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Fontes awesome e do google aplis -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"
         integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,6 +26,7 @@
     <title>Recipes</title>
 
     <style>
+        /* Definição de constantes */
         :root {
             --color-primary: #269fe6;
             --color-primary-hover: #2086c2;
@@ -67,6 +71,7 @@
             --spacing-gutter-large: 4rem;
         }
 
+        /* Reset das configurações e alteração das tags gerais */
         * {
             padding: 0;
             margin: 0;
@@ -80,6 +85,7 @@
         body {
             font-size: 1.6rem;
             font-family: var(--font-primary);
+            background: var(--color-gray-1);
         }
 
         h1,
@@ -91,12 +97,14 @@
             font-family: var(--font-headings);
         }
 
+        /* Característica geral dos containers */
         .container {
             max-width: 144rem;
             margin: 0 auto;
             padding: var(--spacing-gutter-medium);
         }
 
+        /* COnfig do cabeçalho */
         .main-header-container {
             background: var(--color-primary-dark);
         }
@@ -115,6 +123,51 @@
 
         .main-logo-icon {
             margin-right: 2rem;
+        }
+
+        /* Config do Form de pesquisa */
+        .search-form {
+            border: .2rem solid var(--color-primary-dark);
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: .4rem;
+            position: relative;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-input,
+        .search-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 1rem;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        /* Config do foco de pesquisa quando o botão tá em foco ou quando qualquer coisa está em foco */
+        .search-button:focus {
+            outline: .1rem solid var(--color-primary);
+            background: rgba(0, 0, 0, .05);
+        }
+
+        .search-input {
+            width: 100%;
+            padding-right: 3rem;
+        }
+
+        .search-form:focus-within {
+            border-color: var(--color-primary);
+            background-color: var(--color-white);
+        }
+
+        .search-form:focus-within .search-button {
+            color: var(--color-primary);
         }
     </style>
 </head>

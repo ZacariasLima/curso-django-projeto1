@@ -9,9 +9,15 @@ Commit: Classe 23
 Commit: Classe 24
   1 -> Criação da página contato e alteração na def do views.
 
-Commit:
+Commit: Classe 28
   1 -> Removido Contact e About da views e urls de recipes
   2 -> Separação das Pastas Partials e pages em recipes, sendo necessário atuaizar o views
   3 -> Criação do Head de partials e inclução de CSS
   4 -> Inclusão das fonte de ícones para a página
   5 -> Criação da Header do site com CSS no arquivo Head.html
+
+Commit: Classe 30
+  1-> Altera cor do background para cinza
+  2-> Separação do Header num novo arquivo
+  3-> Criação do form de pesquisa 
+  4-> Comentários dos códigos
