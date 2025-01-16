@@ -1,18 +1,26 @@
 <!-- Arquivo Base da Home Page -->
-{% include "Recipes/partials/head.html" %}
+
+{% include "Recipes/partials/head.html" %}  <!-- Inclusão da HEAD do html -->
 
 <body>
-    {% include "Recipes/partials/header.html" %}
+    {% include "Recipes/partials/header.html" %} <!-- Inclusão do Cabeçalho -->
 
-    <!-- Formulário de Pesquisa -->
-    <div class="search-container">
-        <div class="container">
-            <form action="" class="search-form"> 
-                <input type="search" class= "search-input" name="search">
-                <button type="submit" class= "search-button"><i class="fas fa-search"></i></button>
-            </form>
+    {% include "Recipes/partials/search.html" %} <!-- Inclusão da barra de busca -->
+
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
+
         </div>
-    </div>
+    </main>
+
+    {% include "Recipes/partials/footer.html" %}
 </body>
 
 </html>
