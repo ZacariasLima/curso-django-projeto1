@@ -28,3 +28,6 @@ Commit: Classe 35
   3-> Criação dos itens do grid na home
   4-> Geração do arquivo para itens de receita
   5-> Criação do footer principal
+
+Commit: Classe 38
+  1-> Criação do styles.css e inserção do static no Head
