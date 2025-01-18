@@ -36,3 +36,7 @@ Commit: Seção 6
   1-> Criação do base_static e adição do STATICFILES no settings do projeto
   2-> Definição do STATIC_ROOT nas settings do projeto
   3-> Execução do comando Collectstatic do manage.py
+
+Commit: Classe 41
+  1-> Atualização da URL de recipes para aceitar números no caminho
+  2-> Criação da viwe recipe para direcionar para page de detalhes

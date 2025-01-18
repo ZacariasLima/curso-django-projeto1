@@ -3,8 +3,13 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-#Functions temp de HTML
+#Functions que chamam as páginas
 def home (request):
+    return render (request, 'recipes/pages/home.html', context= {
+        'name': 'Zacarias Figueiredo Lima'
+    })
+
+def recipe (request, id):
     return render (request, 'recipes/pages/home.html', context= {
         'name': 'Zacarias Figueiredo Lima'
     })
