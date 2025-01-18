@@ -31,3 +31,8 @@ Commit: Classe 35
 
 Commit: Classe 38
   1-> Criação do styles.css e inserção do static no Head
+
+Commit: Seção 6
+  1-> Criação do base_static e adição do STATICFILES no settings do projeto
+  2-> Definição do STATIC_ROOT nas settings do projeto
+  3-> Execução do comando Collectstatic do manage.py
