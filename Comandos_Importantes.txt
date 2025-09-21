@@ -1,0 +1,9 @@
+Ambiente Vistual
+Python -m Venv venv -> Cria o ambiente virtual
+.\venv\scripts\activate -> Ativar o Ambiente virtual.
+
+-- Atualização do Pip (instalador do Python)
+python -m pip install --upgrade pip -> Updade do instalador
+pip freeze -> Lista de esxtensões
+pip install --upgrade setuptools wheel -> Update das ferramentas do pip freeze
+pip list --outdated -> Lista tudo desatualizado
