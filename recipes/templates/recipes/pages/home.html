@@ -1,26 +1,15 @@
-<!-- Arquivo Base da Home Page -->
+{% extends "global/base.html" %} <!-- Conceito de Herança - Super Classe -->
 
-{% include "Recipes/partials/head.html" %}  <!-- Inclusão da HEAD do html -->
+{% block title %}Home |{% endblock title %}Home |
 
-<body>
-    {% include "Recipes/partials/header.html" %} <!-- Inclusão do Cabeçalho -->
-
-    {% include "Recipes/partials/search.html" %} <!-- Inclusão da barra de busca -->
-
-    <main class="main-content-container">
-        <div class="main-content main-content-list container">
-            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-            {% include "Recipes/partials/recipe_item.html" %} <!-- Inclusão do item da lista -->
-
-        </div>
-    </main>
-
-    {% include "Recipes/partials/footer.html" %}
-</body>
-
-</html>
+{% block content %} <!-- Bloco definido principal -->
+    <div class="main-content main-content-list container">
+        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
+        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
+        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
+        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
+        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
+        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
+        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
+    </div>
+{% endblock content %}
