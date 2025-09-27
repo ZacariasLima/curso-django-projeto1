@@ -41,9 +41,17 @@ Commit: Classe 41
   1-> Atualização da URL de recipes para aceitar números no caminho
   2-> Criação da viwe recipe para direcionar para page de detalhes
 
-Commi: Classe 44
+Commit: Classe 44
   1-> Criação da Página para detail de recipe (recipe-view.html)
   2-> Edição do CSS para criação de regras do recipe-list-item quando dentro da main-content-detail
   3-> Utilização de herança de templates: Arquivo global/base.html e criação do block content
   4-> Adaptação da Home para utilização do Block content
   5-> Adapção do Head: Abertura da head e titles mudaram para o global/base.html para alteração do title
+
+Commit: Classe 49
+  1 -> Criação da pasta utils com Factory.py para preenchimento automático
+  2 -> Alteração na view para criar as receitas falsas ao clicar nos links.
+  3 -> Instalação do Faker na venv
+  4 -> Alteração da pages/home, partial/recipe para gerar pelo content e diferenciar detail de list-item
+  5 -> Ajustes de CSS na partial/recipes para padronização de layout
+  6 -> Atualização dos links dinâmicos (urls e pages) e uso de namespacing (App_name)

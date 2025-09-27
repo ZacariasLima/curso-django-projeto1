@@ -4,12 +4,9 @@
 
 {% block content %} <!-- Bloco definido principal -->
     <div class="main-content main-content-list container">
-        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
-        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
-        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
-        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
-        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
-        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
-        {% include "Recipes/partials/recipe.html" %} <!-- Inclusão do item da lista -->
+        <!-- Inclusão do item da lista -->
+        {% for recipe in recipes %}
+            {% include "Recipes/partials/recipe.html" %} 
+        {% endfor %}
     </div>
 {% endblock content %}
