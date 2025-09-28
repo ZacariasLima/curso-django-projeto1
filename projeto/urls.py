@@ -16,9 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls.static import static #Configurar arquivo estatico na URL
+from django.conf import settings #Importação do que tá na settings {recomendado usar django.conf}
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('recipes.urls')), #Home do Projeto
     #path('recipes/',include('recipes.urls')) #"Home" do App
 ]
+
+#Configuração para aparecer imagem ao clicar no link
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+
+#Configuração para aparecer arquivo statico ao clicar no link
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

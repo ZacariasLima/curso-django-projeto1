@@ -1,10 +1,10 @@
 Tranking do Commit:
 Commit: Classe 23
-  1.1 -> Foi criada a pasta base_templates que será o repositório para templates globais;
-  1.2 -> No app recipes, também foi criada a pasta de templates das recipes
-  1.3 -> Existem as subpastas global e recipes pra evitar nomes em duplicidades.
-  1.4 -> Arquivo settings alterado para adicionar o "BASE_DIR / base_templates" nos diretorios de template
-  1.5 -> Arquivo settings alterado para adicionar o app recipes na lista de applications 
+  1 -> Foi criada a pasta base_templates que será o repositório para templates globais;
+  1 -> No app recipes, também foi criada a pasta de templates das recipes
+  1 -> Existem as subpastas global e recipes pra evitar nomes em duplicidades.
+  1 -> Arquivo settings alterado para adicionar o "BASE_DIR / base_templates" nos diretorios de template
+  1 -> Arquivo settings alterado para adicionar o app recipes na lista de applications 
 
 Commit: Classe 24
   1 -> Criação da página contato e alteração na def do views.
@@ -55,3 +55,14 @@ Commit: Classe 49
   4 -> Alteração da pages/home, partial/recipe para gerar pelo content e diferenciar detail de list-item
   5 -> Ajustes de CSS na partial/recipes para padronização de layout
   6 -> Atualização dos links dinâmicos (urls e pages) e uso de namespacing (App_name)
+
+Commit: Classe 54
+  1 -> Criação de Models (Models.py) - Tabelas do SQL
+  2 -> Instalação do Pillow na VENV - Biblioteca para trabalho com imagens.
+  3 -> Execução da migração pelo mange.py
+    3.1 -> Comando Migrate para versionamento interno do Django
+    3.2 -> Comando Makemigrations cria a migração (recipes/migrations/XXXX_initial.py)
+    3.3 -> Comando Migrate novamente para executar a migração acima.
+  4 -> Criação de Superuser Django (zacariaslima - abc@123.) - manage.py createsuperuser
+  5 -> Registro dos models na page admin (CRUD via Django)
+  6 -> Configuração da pasta de midia no settings do projeto e das urls do projeto
