@@ -66,3 +66,13 @@ Commit: Classe 54
   4 -> Criação de Superuser Django (zacariaslima - abc@123.) - manage.py createsuperuser
   5 -> Registro dos models na page admin (CRUD via Django)
   6 -> Configuração da pasta de midia no settings do projeto e das urls do projeto
+
+Commit: Classe 69
+  1 -> Utilização dos Models no site
+  2 -> Adição do link para categories na recipe item
+  3 -> Update na view e urls do app para adicionar filtro categories
+  4 -> Ajustes de negócios do filter da view
+  5 -> Validações nas páginas para evitar erros por campos vazios
+  6 -> Ajustes para aparecer HMTL de Page Not Found
+  7 -> Projeto renomeado
+  8 -> Alteração da linguagem e time zone da Administration do Django

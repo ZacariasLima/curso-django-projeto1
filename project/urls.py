@@ -1,5 +1,5 @@
 """
-URL configuration for projeto project.
+URL configuration for project project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -21,7 +21,7 @@ from django.conf import settings #Importação do que tá na settings {recomenda
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('recipes.urls')), #Home do Projeto
+    path('',include('recipes.urls')), #Home do project
     #path('recipes/',include('recipes.urls')) #"Home" do App
 ]
 

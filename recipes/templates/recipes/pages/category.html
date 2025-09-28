@@ -1,16 +1,12 @@
 {% extends "global/base.html" %} <!-- Conceito de Herança - Super Classe -->
 
-{% block title %}Home |{% endblock title %}Home |
+{% block title %}{{ title }}{% endblock title %}
 
 {% block content %} <!-- Bloco definido principal -->
     <div class="main-content main-content-list container">
         <!-- Inclusão do item da lista -->
         {% for recipe in recipes %}
-            {% include "Recipes/partials/recipe.html" %}
-        {% empty %}
-        <div class="not-found">
-            <h1>No Recipes Publisheds yet</h1> 
-        </div>
+            {% include "Recipes/partials/recipe.html" %} 
         {% endfor %}
     </div>
 {% endblock content %}
